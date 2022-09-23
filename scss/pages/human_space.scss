@@ -1,0 +1,111 @@
+.container00 {
+    &.container05 {
+        background-image: url(../images/humanFlight/01.jpg);
+    }
+
+    &.container06 {
+        background-image: url(../images/humanFlight/02.jpg);
+    }
+
+    &.container07 {
+        background-image: url(../images/humanFlight/03.jpg);
+    }
+
+    &.container08 {
+        background-image: url(../images/humanFlight/04.jpg);
+    }
+
+    &.container09 {
+        background-image: url(../images/humanFlight/05.jpg);
+    }
+}
+
+.container01Content {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 120px;
+        font-weight: bold;
+    }
+
+    p {
+        padding-top: 15px;
+        font-size: 30px;
+    }
+
+    img {
+        width: 150px;
+        padding-top: -50px;
+    }
+}
+
+.earthTitle {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: $hover-Link;
+    font-size: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            color: $hover-Link;
+        }
+    }
+}
+
+.containerRightContent {
+    padding-left: 55%;
+    padding-top: 15%;
+
+    h1 {
+        font-size: 80px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+}
+
+.containerLeftContent {
+    padding-left: 5%;
+    padding-top: 18%;
+
+    h1 {
+        font-size: 80px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+// Media queries
+
+@media (max-width: 1000px) {
+    .container01Content {
+        height: auto;
+
+        h1 {
+            font-size: 80px;
+        }
+
+        img {
+            width: 150px;
+            padding-top: 50px;
+        }
+    }
+}
